@@ -1,0 +1,10 @@
+<div class="characters-container">
+
+    <h2>Personajes Principales</h2>
+    <ul *ngFor="let character of characters, let i = index">
+        <li [ngClass]="'actor ' + i.toString()">
+        {{i+1}} {{character.actor}} es {{character.character}}
+        </li>
+    </ul>
+
+</div>

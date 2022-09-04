@@ -1,0 +1,15 @@
+
+h1{
+    color:red;
+    text-align: center;
+    background-color: black;
+    padding: 2rem;
+}
+/* .main-container{
+   
+} */
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
