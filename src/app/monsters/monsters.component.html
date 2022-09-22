@@ -3,10 +3,9 @@
     <h2>¡Descubri los monstruos!</h2>
     
     <div class="button-container" >
-        <button *ngFor="let monster of monsters" (click)=" currentMonster = monster">{{monster}}</button>
+        <button mat-button color="warn" *ngFor="let monster of monsters" (click)=" currentMonster = monster">{{monster}}</button>
 
     </div>
-   
     <div class="image-container">
         <img src="../../assets/monsters.jpg" alt="monsters">
     </div>

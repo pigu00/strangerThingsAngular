@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-monsters',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./monsters.component.css']
 })
 export class MonstersComponent  {
-  
+  @Input()
+color:ThemePalette
+
   public monsters:string[] = ['Demogorgon','Mind Flyers',
   'Vecna']
   

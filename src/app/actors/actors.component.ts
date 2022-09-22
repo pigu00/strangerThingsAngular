@@ -1,16 +1,15 @@
-import { Component, Input } from '@angular/core';
-import { ThemePalette } from '@angular/material/core';
-
-@Component({
-  selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.css']
-})
-export class CharactersComponent {
+import { Component } from '@angular/core';
 
 
-  public characters = [
-    { actor: 'Winona Ryder', character: 'Joyce Byers' },
+
+export interface PeriodicElement {
+  actor: string;
+  character: string;
+  
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  { actor: 'Winona Ryder', character: 'Joyce Byers' },
     { actor: 'David Harbour', character: 'Jim Hopper' },
     { actor: 'Millie Bobby', character: 'Brown ,Once' },
     { actor: 'Finn Wolfhard', character: 'Mike Wheeler' },
@@ -22,5 +21,16 @@ export class CharactersComponent {
     { actor: 'Charlie Heaton', character: 'Jonathan Byers' },
     { actor: 'Cara Buono', character: 'Karen Wheeler' },
     { actor: 'Matthew Modine', character: 'Dr. Martin Brenner' },
-  ]
+];
+
+@Component({
+  selector: 'app-actors',
+  templateUrl: './actors.component.html',
+  styleUrls: ['./actors.component.css']
+})
+export class ActorsComponent {
+
+  displayedColumns: string[] = ['actor', 'character'];
+  dataSource = ELEMENT_DATA;
 }
+
