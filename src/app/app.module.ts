@@ -12,8 +12,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
-import {MaterialModule} from './material/material.module'
-
+import {MaterialModule} from './material/material.module';
+import { ProductosComponent } from './productos/productos.component'
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +22,15 @@ import {MaterialModule} from './material/material.module'
     CharactersComponent,
     MonstersComponent,
     HeaderComponent,
-    ActorsComponent
+    ActorsComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
     // MatToolbarModule,
     // MatIconModule,
     // MatTableModule,
