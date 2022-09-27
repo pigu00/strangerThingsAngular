@@ -15,6 +15,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MaterialModule} from './material/material.module';
 import { ProductosComponent } from './productos/productos.component'
 import { HttpClientModule } from '@angular/common/http';
+import { FormularioComponent } from './formulario/formulario.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +28,19 @@ import { HttpClientModule } from '@angular/common/http';
     MonstersComponent,
     HeaderComponent,
     ActorsComponent,
-    ProductosComponent
+    ProductosComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    FormsModule
+
     // MatToolbarModule,
     // MatIconModule,
     // MatTableModule,
@@ -42,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
   //   MatTableModule,
   //   MatButtonModule
   // ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
