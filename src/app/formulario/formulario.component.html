@@ -3,7 +3,7 @@
 
 <form [formGroup]="miForm">
       <label>Nombre Completo</label>
-      <p *ngIf="miForm.controls.nombre.errors && miForm.controls.nombre.touched">
+      <p *ngIf="miForm.controls['nombre'].errors && miForm.controls['nombre'].touched">
         Debe tener al menos 5 caracteres</p>
       <input type="text" 
       placeholder="Ingrese nombre completo" 

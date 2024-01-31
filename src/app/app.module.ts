@@ -46,12 +46,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     // MatTableModule,
     // MatButtonModule
   ],
-  // exports:[
-  //   MatToolbarModule,
-  //   MatIconModule,
-  //   MatTableModule,
-  //   MatButtonModule
-  // ],
+   exports:[
+     MatToolbarModule,
+      MatIconModule,
+     MatTableModule,
+     MatButtonModule
+   ],
   
   providers: [],
   bootstrap: [AppComponent]
